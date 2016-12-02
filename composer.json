@@ -1,6 +1,6 @@
 {
-    "name": "cakephp/app",
-    "description": "CakePHP skeleton app",
+    "name": "falco442/cr_project",
+    "description": "CR Management for Indra",
     "homepage": "http://cakephp.org",
     "type": "project",
     "license": "MIT",

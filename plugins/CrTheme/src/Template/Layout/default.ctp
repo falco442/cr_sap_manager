@@ -1,10 +1,13 @@
 <?php echo $this->Html->docType(); ?>
 <html>
 	<head>
-	<?= $this->Html->css('style'); ?>
+	<?= $this->Html->css(['style','kube.min']); ?>
 	<style>
 	html{
 		background-image: url("<?= $this->request->webroot; ?>img/wallpaper.jpg");
+	}
+	body{
+		background-color: transparent;
 	}
 	</style>
 
@@ -13,14 +16,16 @@
 	</head>
 
 	<body>
-		<nav>
-			<?= $this->Html->link('Home',['controller'=>'Pages','action'=>'display','home']); ?>
-			<?= $this->Html->link('Contact webmaster','mailto:mfrancaviglia@indracompany.com'); ?>
-			<?= $this->Html->Link('Systems',['controller'=>'Systems','action'=>'index']) ?>
+		<nav class="navbar">
+			<ul>
+				<li><?= $this->Html->link('Home',['controller'=>'Systems','action'=>'index']); ?></li>
+				<li><?= $this->Html->link('Contact webmaster','mailto:mfrancaviglia@indracompany.com'); ?></li>
+				<li><?= $this->Html->Link('Systems',['controller'=>'Systems','action'=>'index']) ?></li>
+			</ul>
 		</nav>
 
-	<?= $this->fetch('content'); ?>
-
-	<?= $this->fetch('script'); ?>
+		<?= $this->fetch('content'); ?>
+		<?= $this->Html->script(['jquery-3.1.1.min','kube.min']); ?>
+		<?= $this->fetch('script'); ?>
 	</body>
 </html>

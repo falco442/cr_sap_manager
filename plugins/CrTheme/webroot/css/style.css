@@ -1,198 +1,27 @@
-*
-{
-	background-color: transparent;
-	color: lime;
-	font-weight: normal;
-	font-size: 1.03em;
-}
-
-html
-{
-	background-image: url(wallpaper.jpg);
-}
-
-header
-{
-	font-size: xx-large;
-	text-align: center;
-	/*position: relative;*/
-	color: yellow;
-	margin: 0 auto;
-	border:#00FF00;
-	
-}
-
-table, th, td
-{
-	border: 1px inset black;
-	opacity: 0.9;
-	bgcolor: white;
-	background: #669966;
-	color: #000000;
-}
-
-
-form
-{	
-	margins: auto;
-	margin-left: 40px;
-	margin-top:40px;
-}
-
-
-
-
-table
-{	
-	/*display: block;*/
-	margin-left: auto;
-	margin-right:auto;
-	margin-top: 40px;
-	/*position: absolute;
-	margin-top: 40px;*/
-	/*overflow: scroll;*/
-}
-
-
-::selection
-{
-	background-color: white;
+*{
 	color: yellow;
 }
 
-div
-{
-	background-color: rgba(0,128,150,0.6);
-	margin-top: 2%;
-	display:block;
-	text-shadow: 4px 3px 6px rgba(0,0,0,0.8);
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
 
-.centro 
-{	
-	width: 75%;
-	position:static;
-	left:15%;
-	margin: 5px;
-}	
-
-#titolo
-{
-	background-color: rgba(128,128,128,0.7);
+.navbar li {
+    float: left;
 }
 
-
-.side-bar
-{
-    float: right;
-    height: 100%;
-    width: 200px;
-    margin-top: 100px;
-}
-    
- 
-h1{
-	color: red;
-	/*border-bottom: 5px groove black;*/
-	font-size: 1.6em;
-	text-align: center;
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
-a.bianco:link {
- color: white;
- text-decoration: none;
- font-weight: bold;
+.navbar li a:hover {
+    background-color: #111;
 }
-
-a.bianco:visited {
- color: yellow;
-}
-
-a.bianco:hover 
-{
- color: blue;
-}
-
-a.bianco:active 
-{
- color: rosso;
-}
-
-
-
-input:focus 
-{
-	background-color: rgba(255,255,0,0.6);
-	outline-color: red;
-	outline-width: 5px;
-}
-
-
-input[type=submit]
-{
-	background:gray;	
-	color:black;
-}
-
-p
-{
-	width = 50px;
-}
-
-
-.marrone
-{
-	background: maroon;
-}
-
-a.giallo
-{
-	/*background-color: yellow;*/
-	color: yellow;
-}
-
-
-.logout
-{
-	font-size: larger;
-	position: absolute;
-	right: 100px;
-	top: 40px;
-}
-
-
-.rosso
-{
-	color:red;
-}
-
-button[type=button]
-{
-	background:gray;	
-	color:black;
-}
-
-option
-{
-	color:white;
-}
-
-button.aggiungi
-{
-	
-	display: block;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:15px;
-}
-
-
-.centrato
-{	
-	display: block;
-	margin-left:auto;
-	margin-right:auto;
-	margin-top:15px;
-}
-
-
