@@ -1,19 +1,17 @@
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('List Systems'), ['action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('List Requests'), ['controller' => 'Requests', 'action' => 'index']) ?></li>
-        <li><?= $this->Html->link(__('New Request'), ['controller' => 'Requests', 'action' => 'add']) ?></li>
-    </ul>
-</nav>
-<div class="systems form large-9 medium-8 columns content">
-    <?= $this->Form->create($system) ?>
-    <fieldset>
-        <legend><?= __('Add System') ?></legend>
-        <?php
-            echo $this->Form->input('name');
-        ?>
-    </fieldset>
-    <?= $this->Form->button(__('Submit')) ?>
-    <?= $this->Form->end() ?>
+<div class="row centered">
+    <div class="col">
+        <div class="systems form large-9 medium-8 columns content">
+            <?= $this->Form->create($system) ?>
+            <fieldset>
+                <legend><?= __('Add System') ?></legend>
+                <div class="form-item">
+                    <?= $this->Form->input('name'); ?>
+                </div>
+                <div class="form-item">
+                    <?= $this->Form->button(__('Submit'),['class'=>'button primary']) ?>
+                </div>
+            </fieldset>
+            <?= $this->Form->end() ?>
+        </div>
+    </div>
 </div>

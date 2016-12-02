@@ -1,5 +1,25 @@
-*{
-	color: yellow;
+body{
+    background-color: transparent;
+    margin-top: 52px;
+}
+
+form{
+    background-color: rgba(216, 216, 216, 0.2);
+}
+
+*,h1, h1.title, h2, h3, h4, h5, h6{
+	color: #9bffa5;
+}
+
+.pagination a{
+    background-color: #dddddd;
+    border: 1px solid #bcbcbc;
+}
+
+.navbar{
+    position: fixed;
+    display: inline-block;
+    top: 0px;
 }
 
 .navbar ul {
@@ -24,4 +44,8 @@
 
 .navbar li a:hover {
     background-color: #111;
+}
+
+a{
+    color: white;
 }

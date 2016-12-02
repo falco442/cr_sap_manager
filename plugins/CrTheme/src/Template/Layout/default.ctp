@@ -1,13 +1,10 @@
 <?php echo $this->Html->docType(); ?>
 <html>
 	<head>
-	<?= $this->Html->css(['style','kube.min']); ?>
+	<?= $this->Html->css(['kube.min','style']); ?>
 	<style>
 	html{
 		background-image: url("<?= $this->request->webroot; ?>img/wallpaper.jpg");
-	}
-	body{
-		background-color: transparent;
 	}
 	</style>
 
